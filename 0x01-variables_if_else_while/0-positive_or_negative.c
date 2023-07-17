@@ -2,7 +2,15 @@
 #include <time.h>
 /* more headers goes there */
 #include <stdio.h>
+
 /* betty style doc for function main goes there */
+/**
+ * main - this is the main entry point
+ * feel free to add other things
+ *
+ * Return: returns 0 asthe exit code
+ */
+
 int main(void)
 {
 	int n;
