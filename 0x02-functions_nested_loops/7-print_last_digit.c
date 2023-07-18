@@ -13,5 +13,5 @@ int print_last_digit(int c)
 	
 	if (retval < 0 ) return (-retval);
 
-	return retval
+	return retval;
 }
