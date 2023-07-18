@@ -13,15 +13,15 @@ int main(void)
 	int tens;
 	int base;
 
-for ( tho = 0 ; tho < 10 ; tho++)
-{	
+for (tho = 0 ; tho < 10 ; tho++)
+{
 
 	for (hun = 0 ; hun <= 10 ; hun++)
 	{
 	
 		for (tens = 0 ; tens < 10 ; tens++)
 		{
-			for ( base = 0 ; base < 10 ; base++)
+			for (base = 0 ; base < 10 ; base++)
 			{
 				putchar('0' + tho);
 				putchar('0' + hun);
