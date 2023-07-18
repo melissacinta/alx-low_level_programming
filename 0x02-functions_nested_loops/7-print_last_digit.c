@@ -11,7 +11,14 @@ int print_last_digit(int c)
 
 	retval = c % 10;
 	
-	if (retval < 0 ) return (-retval);
-
-	return retval;
+	if (retval < 0 )
+	{
+		_putchar(-retval + '0');
+		return (-retval);
+	}
+	else
+	{
+		_putchar(retval + '0');
+		return retval;
+	}
 }
