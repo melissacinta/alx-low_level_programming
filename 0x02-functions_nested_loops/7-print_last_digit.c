@@ -10,8 +10,7 @@ int print_last_digit(int c)
 	int retval = 0;
 
 	retval = c % 10;
-	
-	if (retval < 0 )
+	if (retval < 0)
 	{
 		_putchar(-retval + '0');
 		return (-retval);
@@ -19,6 +18,6 @@ int print_last_digit(int c)
 	else
 	{
 		_putchar(retval + '0');
-		return retval;
+		return (retval);
 	}
 }
