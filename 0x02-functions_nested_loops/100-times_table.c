@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * times_table - prints the times table, starting with 0 to 15
+ * print_times_table - prints the times table, starting with 0 to 15
  *
  * @n: multiplier
  */
-void times_table(int n)
+void print_times_table(int n);
 {
 	int i, j, k;
 
