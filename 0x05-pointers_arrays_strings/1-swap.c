@@ -2,7 +2,8 @@
 
 /**
  * swap_int - swap pointer values;
- * @n : accepts a pointer to an integer
+ * @a: acept a pointer to int;
+ * @b : accepts two pointers to integers
  */
 void swap_int(int *a, int *b)
 {
