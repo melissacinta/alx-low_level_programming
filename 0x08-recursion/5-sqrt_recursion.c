@@ -12,12 +12,12 @@ int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (_sqrt_recurse(x, 0));
+	return (_sqrt_recurse(n, 0));
 }
 
 
 /**
- * _sqrt_recursion - return the factorial of a given number
+ * _sqrt_recurse - return the factorial of a given number
  * @x: number to find the square root of
  * @y: iterator
  * Return: return the square root of n
