@@ -26,7 +26,7 @@ int _sqrt_recurse(int x, int y)
 {
 	if (y * y > x)
 		return (-1);
-	if (y * y == n)
+	if (y * y == x)
 		return (y);
 	return (_sqrt_recurse(x, y + 1));
 }
