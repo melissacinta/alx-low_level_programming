@@ -3,7 +3,7 @@
 /**
  * main - function to tell the name of a file it was compile from
  *
- * Return - always 0 meaning success.
+ * Return: always 0 meaning success.
  */
 
 int main(void)
