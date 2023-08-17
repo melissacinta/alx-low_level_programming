@@ -21,7 +21,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 	/* allocate size for dog.name */
-	dog->name = malloc(sizeof(char) * strlen(name));
+	dog->name = malloc(sizeof(char) * (strlen(name) + 1));
 	/* if it fails return null and free dog */
 	if (dog->name == NULL)
 	{
@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	/* allocate space for owner */
-	dog->owner = malloc(sizeof(char) * strlen(name));
+	dog->owner = malloc(sizeof(char) * (strlen(name) + 1));
 	if (dog->owner == NULL)
 	{
 		free(dog);
