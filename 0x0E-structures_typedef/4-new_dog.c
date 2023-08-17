@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "dog.h"
 
 /**
@@ -11,13 +12,35 @@
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
+	/* declare pointer for new dog */
 	dog_t *dog;
 
+	/* allocate size for the dog struct */
 	dog = malloc(sizeof(dog_t));
+	/* return null if dog is empty */
 	if (dog == NULL)
 		return (NULL);
-	dog->name = name;
+	/* allocate size for dog.name */
+	dog->name = malloc(sizeof(char) * strlen(name));
+	/* if it fails return null and free dog */
+	if (dog->name == NULL)
+	{
+		free(dog);
+		return (NULL);
+	}
+
+	/* allocate space for owner */
+	dog->owner = malloc(sizeof(char) * strlen(name));
+	if (dog->owner == NULL)
+	{
+		free(dog);
+		return (NULL);
+	}
+
 	dog->age = age;
-	dog->owner = owner;
+	/* keep a copy of dog name and owner */
+	strcpy(dog->name, name);
+	strcpy(dog->owner,  owner);
+
 	return (dog);
 }
