@@ -9,14 +9,10 @@ void free_list(list_t *head)
 {
 	list_t *temp;
 
-	printf("\n\n Freeing List: \n");
 	while (head != NULL)
 	{
 		temp = head->next;
-		printf("clear mem for: %s", head->str);
 		free(head);
 		head = temp;
-		printf("->\n");
 	}
-	printf("head: %s\n", (char *)head);
 }
