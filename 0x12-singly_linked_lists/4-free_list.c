@@ -2,17 +2,18 @@
 
 /**
  * free_list -  function that frees a list
- * @head: start of the list
+ * @head start of the list
  */
 
 void free_list(list_t *head)
 {
+	list_t *temp;
 
-	if (head != NULL)
+	while (head != NULL)
 	{
-		if (head ->next != NULL)
-			free_list(head->next);
+		temp = head->next;
 		free(head->str);
 		free(head);
+		head = temp;
 	}
 }
