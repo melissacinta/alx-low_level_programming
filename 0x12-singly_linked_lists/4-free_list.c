@@ -2,7 +2,7 @@
 
 /**
  * free_list -  function that frees a list
- * @head start of the list
+ * @head: start of the list
  */
 
 void free_list(list_t *head)
