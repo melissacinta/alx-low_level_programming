@@ -3,7 +3,7 @@
 /**
  * add_node - function that adds a new node at the beginning of a list
  * @head: current head of the list
- * str: string of the new node
+ * @str: string of the new node
  * Return: returns the new list.
  */
 
