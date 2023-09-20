@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 		error_and_exit(98, "Error: Can't read from file %s");
 	}
 
-	f_dest = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	f_dest = open(file_to, O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	if (f_dest == -1)
 	{
 		close(f_source);
